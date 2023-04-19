@@ -6,18 +6,25 @@ import devslane from "../../public/devslane.png";
 import WorkCard from "./WorkCard";
 const Work = () => {
   const codeYogiWorks = [
+    "Worked on HTML and CSS(tailwind).",
+    "Worked on React.js concepts.",
+    "Worked on state management using Redux.js.",
+    "Worked on Api integration.",
+    "Worked on Todo App where user can add , delete , edit their tasks.",
+    "Worked on Movie listing app using redux and redux saga.",
+  ];
+  const devslaneWorks = [
     "Developing and maintaining web applications using React.js and other related technologies.",
     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
     "Implementing responsive design and ensuring cross-browser compatibility.",
     "Participating in code reviews and providing constructive feedback to other developers.",
   ];
-  const show = false;
-
-  const fun = () => {};
 
   return (
     <>
-      <h3 className="text-gray-600">WHAT I HAVE DONE SO FAR</h3>
+      <h3 id="work" className="text-gray-600">
+        WHAT I HAVE DONE SO FAR
+      </h3>
       <span className="text-3xl text-gray-600  md:text-6xl font-black whitespace-nowrap ">
         Work Experience.
       </span>
@@ -47,7 +54,7 @@ const Work = () => {
         <WorkCard
           title="SDE Intern"
           orgName="Devslane"
-          works={codeYogiWorks}
+          works={devslaneWorks}
           workingPeriod="August 2022 - Present"
           arrowSide="left"
           image={devslane}

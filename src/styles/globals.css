@@ -105,6 +105,19 @@ a {
     color-scheme: dark;
   }
 } */
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+*::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #593783;
+  border-radius: 20px;
+  border: 0 solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+}
 
 @tailwind base;
 @tailwind components;

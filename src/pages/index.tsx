@@ -8,8 +8,15 @@ import Work from "@/components/Work";
 import Head from "next/head";
 import Image from "next/image";
 import codingImage from "../../public/programming.jpg";
+import { useState } from "react";
 
 export default function Home() {
+  const [render, setRender] = useState(false);
+
+  const handleScroll = (event: any) => {
+    console.log("running");
+    setRender(true);
+  };
   return (
     <>
       <Head>
@@ -22,7 +29,10 @@ export default function Home() {
         {/* Header Section */}
         <Navbar />
         {/* Home Section */}
-        <div className="flex  md:gap-5 md:px-44 md:py-12 mt-10 md:mt-6">
+        <div
+          id="home"
+          className="flex  md:gap-5 md:px-44 md:py-12 mt-10 md:mt-6"
+        >
           <div>
             <div className="w-5 h-5 bg-indigo-700 rounded-full mt-3"></div>
             <div className="h-72 bg-gradient-to-b from-indigo-700 via-indigo-600 to-purple-200 w-1 ml-2 mb-0.5"></div>
@@ -48,11 +58,11 @@ export default function Home() {
           <About />
         </div>
         {/* Skills Section */}
-        <div className=" px-5 py-5 md:px-44 md:py-12 ">
+        <div className=" scroll-mb-2 px-5 py-5 md:px-44 md:py-12 ">
           <Skills />
         </div>
         {/* Work Section */}
-        <div className="px-5 py-5 md:px-44 md:py-12 ">
+        <div onScroll={handleScroll} className="px-5 py-5 md:px-44 md:py-12 ">
           <Work />
         </div>
         {/* Projects Section */}
