@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link className="cursor-pointer" smooth={true} to="home">
           <Image
             className="rounded-full"
-            src="/profile.jpg"
+            src="/myPic.jpeg"
             alt={""}
             width={45}
             height={45}

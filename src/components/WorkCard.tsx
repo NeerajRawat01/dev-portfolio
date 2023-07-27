@@ -6,6 +6,7 @@ interface props {
   className?: string;
   title: string;
   orgName: string;
+  orgLink: string;
   works: string[];
   workingPeriod: string;
   arrowSide: "left" | "right";
@@ -15,6 +16,7 @@ const WorkCard: React.FC<props> = ({
   className,
   title,
   orgName,
+  orgLink,
   works,
   workingPeriod,
   arrowSide,
@@ -50,7 +52,9 @@ const WorkCard: React.FC<props> = ({
         </div>
         <div className="-mt-7 relative">
           <div className="w-12  absolute top-7 -translate-x-1/2 left-2 bg-white rounded-full border-4 ">
-            <Image src={image} alt="" />
+            <a href={orgLink}>
+              <Image src={image} alt="" />
+            </a>
           </div>
           <div className="h-full bg-indigo-600 w-1 ml-2 mb-0.5"></div>
         </div>

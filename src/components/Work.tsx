@@ -43,23 +43,34 @@ const Work = () => {
           <WorkCard
             title="React Js Trainee"
             orgName="CodeYogi"
+            orgLink="https://codeyogi.io/"
             works={codeYogiWorks}
             workingPeriod="July 2021 - June 2022"
             arrowSide="right"
             image={codeYogi}
           />
-          {/* ... */}
         </Transition>
-
-        <WorkCard
-          title="SDE Intern"
-          orgName="Devslane"
-          works={devslaneWorks}
-          workingPeriod="August 2022 - Present"
-          arrowSide="left"
-          image={devslane}
-          className="mt-3 lg:flex-row-reverse lg:justify-center lg:ml-[10.313rem]"
-        />
+        <Transition
+          appear={true}
+          show={true}
+          enter="transition ease-in-out duration-300 transform"
+          enterFrom="translate-x-full"
+          enterTo="translate-x-0"
+          leave="transition ease-in-out duration-300 transform"
+          leaveFrom="translate-x-0"
+          leaveTo="translate-x-full"
+        >
+          <WorkCard
+            title="SDE Intern"
+            orgName="Devslane"
+            orgLink="https://devslane.com/"
+            works={devslaneWorks}
+            workingPeriod="August 2022 - Present"
+            arrowSide="left"
+            image={devslane}
+            className="mt-3 lg:flex-row-reverse lg:justify-center lg:ml-[10.313rem]"
+          />
+        </Transition>
       </div>
     </>
   );

@@ -31,7 +31,7 @@ export default function Home() {
         {/* Home Section */}
         <div
           id="home"
-          className="flex  md:gap-5 md:px-44 md:py-12 mt-10 md:mt-6"
+          className="flex md:gap-5 md:px-44 md:py-12 xl:px-52 mt-10 md:mt-6"
         >
           <div>
             <div className="w-5 h-5 bg-indigo-700 rounded-full mt-3"></div>
@@ -54,15 +54,18 @@ export default function Home() {
           </div>
         </div>
         {/* About Section */}
-        <div id="about" className=" px-5 py-5 md:px-44 md:py-12 ">
+        <div id="about" className=" px-5 py-5 md:px-44 xl:px-52 md:py-12 ">
           <About />
         </div>
         {/* Skills Section */}
-        <div className=" scroll-mb-2 px-5 py-5 md:px-44 md:py-12 ">
+        <div className=" scroll-mb-2 px-5 py-5 md:px-44 xl:px-52 md:py-12 ">
           <Skills />
         </div>
         {/* Work Section */}
-        <div onScroll={handleScroll} className="px-5 py-5 md:px-44 md:py-12 ">
+        <div
+          onScroll={handleScroll}
+          className="px-5 py-5 md:px-44 xl:px-52 md:py-12 "
+        >
           <Work />
         </div>
         {/* Projects Section */}
@@ -70,7 +73,7 @@ export default function Home() {
           <Projects />
         </div>
         {/* Contact Section */}
-        <div className="px-5 py-5 md:px-44 md:py-12 ">
+        <div className="px-5 py-5 md:px-44 xl:px-52 md:py-12 ">
           <Contact />
         </div>
         {/* Footer Section */}

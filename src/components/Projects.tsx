@@ -21,7 +21,7 @@ const Projects = () => {
           memes from various creators, providing a convenient and efficient
           solution for creators and consumers needs."
           projectName="MemeBook"
-          tags={["#next.js", "#typescript", "#tailwind"]}
+          tags={["#next.js", "#firebase", "#tailwind"]}
           projectLink="https://github.com/NeerajRawat01/memebookfe"
         />
         <ProjectCard
