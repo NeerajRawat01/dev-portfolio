@@ -27,7 +27,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/myPic.jpeg" />
       </Head>
-      <div className="flex flex-col ">
+      <div className="flex flex-col justify-center items-center p-7 bg-gray-200">
         {/* Header Section */}
         <Navbar />
         {/* Home Section */}
@@ -56,17 +56,17 @@ export default function Home() {
           </div>
         </div>
         {/* About Section */}
-        <div id="about" className=" px-5 py-5 md:px-44 xl:px-52 md:py-12 ">
+        <div id="about" className=" px-5  py-5 md:px-44 xl:px-52 md:py-12 ">
           <About />
         </div>
         {/* Skills Section */}
-        <div className=" scroll-mb-2 px-5 py-5 md:px-44 xl:px-52 md:py-12 ">
+        <div className="scroll-mb-2 flex justify-center">
           <Skills />
         </div>
         {/* Work Section */}
         <div
           onScroll={handleScroll}
-          className="px-5 py-5 md:px-44 xl:px-52 md:py-12 "
+          className="px-5 py-5 md:px-44 xl:px-60 md:py-12 "
         >
           <Work />
         </div>

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menuBar, setMenuBar] = useState(false);
   return (
     <>
-      <div className="flex px-[1.531rem] top-0 sticky z-10 bg-white bg-opacity-90 backdrop-blur shadow-2xl justify-between tracking-[0.07rem] h-[3.625rem] items-center">
+      <div className="flex px-[1.531rem] rounded-2xl w-full md:w-fit  top-0 sticky z-10 bg-white bg-opacity-90 backdrop-blur shadow-2xl justify-between tracking-[0.07rem] h-[3.625rem] items-center">
         <Link className="cursor-pointer" smooth={true} to="home">
           <Image
             className="rounded-full"
@@ -31,7 +31,7 @@ const Navbar = () => {
           {!menuBar ? (
             <RxHamburgerMenu
               onClick={() => setMenuBar(true)}
-              className="text-2xl cursor-pointer"
+              className="text-2xl   cursor-pointer"
             />
           ) : (
             <RxCross2
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div
           className={`transition-all duration-700 absolute ${
             menuBar ? "opacity-100" : "opacity-0"
-          } rounded-lg gap-2 font-semibold right-3 top-20 px-7 py-6 bg-gradient-to-r from-gray-400  to-gray-900  text-white flex flex-col`}
+          }  rounded-lg gap-2 font-semibold right-3 top-20 px-7 py-6 bg-gradient-to-r from-gray-400  to-gray-900  text-white flex flex-col`}
         >
           <Link
             onClick={() => setMenuBar(false)}
