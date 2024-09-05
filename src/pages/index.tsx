@@ -14,7 +14,6 @@ export default function Home() {
   const [render, setRender] = useState(false);
 
   const handleScroll = (event: any) => {
-    console.log("running");
     setRender(true);
   };
   return (

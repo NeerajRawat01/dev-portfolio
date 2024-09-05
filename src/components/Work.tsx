@@ -61,7 +61,7 @@ const Work = () => {
           leaveTo="translate-x-full"
         >
           <WorkCard
-            title="SDE Intern"
+            title="Software Developer"
             orgName="Devslane"
             orgLink="https://devslane.com/"
             works={devslaneWorks}
