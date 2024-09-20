@@ -36,7 +36,7 @@ const Skills = () => {
   // };
   return (
     <>
-      <div className="flex gap-4 md:w-1/2 mx-10 items-center  flex-wrap">
+      <div className="flex gap-4 md:w-1/2 md:mx-10 items-center  flex-wrap">
         {technologies.map((t) => (
           <div className={`relative w-32 h-32`}>
             <CircularProgressbarWithChildren
