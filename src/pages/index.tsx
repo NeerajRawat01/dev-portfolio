@@ -66,12 +66,12 @@ export default function Home() {
         {/* Work Section */}
         <div
           onScroll={handleScroll}
-          className="px-5 py-5 md:px-44 xl:px-60 md:py-12 "
+          className=" py-5 md:px-44 xl:px-60 md:py-12 "
         >
           <Work />
         </div>
         {/* Projects Section */}
-        <div className="px-5 py-5 md:px-44 md:py-12 ">
+        <div className=" py-5 md:px-44 md:py-12 ">
           <Projects />
         </div>
         {/* Contact Section */}
